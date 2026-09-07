@@ -19,7 +19,7 @@ class MainApp extends StatelessWidget {
       home: HomeScreen(
         // "Simulating" dependency injection since I didn't want to use
         // a DI package in this project to keep it simple.
-        colorController: HomeColorController(), 
+        colorController: HomeColorController(),
       ),
     );
   }
