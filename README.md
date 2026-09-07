@@ -1,14 +1,11 @@
-# flutter_project_template
-[![flutter_project_template](https://nokycucwgzweensacwfy.supabase.co/functions/v1/get_project_badge?projectId=149)](https://nokycucwgzweensacwfy.supabase.co/functions/v1/get_project_url?projectId=149)
+# Random Color Generator
+This is a simple project that generates random colors when the user taps the screen and assign these colors to the screen's background colors. All of that without using any external package in any part of the app.
 
-📖 Template for flutter projects using solid_lints, CI for tests and analysis.
-
-- Uses latest stable flutter
-- Repo name as your project name
-- Organization from your profile email address or default
-
-# Usage
-1. Press "Use this template" on the menu.
-2. Fill Github form with your new repo name and press "Create repository from template"
-3. Wait for it to be created and set up action is complete. In a couple of minutes, you'll see the flutter project created in your repo once Github Actions are complete.
-4. Clone and code.
+## Features
+The project contains:
+- Color generation using math's Random class
+- State management with ValueNotifier
+- Unit and Widget tests
+- Text color that depends on the background color's luminance
+- Code documentation into every public class and methods
+- Usage of DRY and KISS principles
