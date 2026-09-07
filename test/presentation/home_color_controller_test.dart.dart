@@ -18,7 +18,7 @@ void main() {
       () {
         final homeColorController = HomeColorController();
         final originalColor = homeColorController.colorNotifier.value;
-        
+
         homeColorController.changeColor();
         final newColor = homeColorController.colorNotifier.value;
 
@@ -26,5 +26,4 @@ void main() {
       },
     );
   });
-  
 }

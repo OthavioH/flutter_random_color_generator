@@ -29,9 +29,7 @@ void main() {
 
       final lastColor = homeController.colorNotifier.value;
 
-      await tester.tap(
-        find.byType(HomeScreen)
-      );
+      await tester.tap(find.byType(HomeScreen));
 
       expect(lastColor != homeController.colorNotifier.value, isTrue);
     });
