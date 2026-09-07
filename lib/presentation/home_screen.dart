@@ -25,11 +25,18 @@ class HomeScreen extends StatelessWidget {
         listenable: _colorController.colorNotifier,
         builder: (context, child) {
           final color = _colorController.colorNotifier.value;
+          final colorBrigthness = color.computeLuminance();
+          final isColorLight = colorBrigthness > 0.5;
           return Scaffold(
             backgroundColor: color,
-            body: const Center(
+            body: Center(
               child: Text(
                 "Hello there",
+                style: TextStyle(
+                  color: isColorLight ? Colors.black : Colors.white,
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
           );
