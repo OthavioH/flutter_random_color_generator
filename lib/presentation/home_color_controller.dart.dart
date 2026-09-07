@@ -36,13 +36,22 @@ class HomeColorController {
   /// this method is able to generate 16777216 different colors.
   /// 
   /// Each random channel value is >=0 and < 256.
+  /// 
+  /// Returns a [Color] object.
   Color _generateRandomColor() {
-    final random = Random();
+    
 
-    final red = random.nextInt(256);
-    final green = random.nextInt(256);
-    final blue = random.nextInt(256);
+    final red = _getRandomColorChannelValue();
+    final green = _getRandomColorChannelValue();
+    final blue = _getRandomColorChannelValue();
 
     return Color.fromARGB(255, red, green, blue);
+  }
+
+  /// Generates a random value that it is >=0 and < 256.
+  /// 
+  /// Returns an [int] value
+  int _getRandomColorChannelValue () {
+    return Random().nextInt(256);
   }
 }
