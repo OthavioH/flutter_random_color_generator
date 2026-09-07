@@ -9,7 +9,7 @@ void main() {
 /// Main app widget, which starts our project with a [MaterialApp]
 /// by passing home screen and title configurations to it.
 class MainApp extends StatelessWidget {
-  /// Creates the instance of [MainApp]a
+  /// Creates the instance of [MainApp]
   const MainApp({super.key});
 
   @override
@@ -17,7 +17,9 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       title: 'Random Color Generator',
       home: HomeScreen(
-        colorController: HomeColorController(),
+        // "Simulating" dependency injection since I didn't want to use
+        // a DI package in this project to keep it simple.
+        colorController: HomeColorController(), 
       ),
     );
   }
