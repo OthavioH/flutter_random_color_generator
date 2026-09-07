@@ -7,12 +7,13 @@ void main() {
 }
 
 
+/// Main app widget, which starts our project with a [MaterialApp]
+/// by passing home screen and title configurations to it.
 class MainApp extends StatelessWidget {
 
   /// Creates the instance of [MainApp]a
   const MainApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

@@ -28,10 +28,12 @@ class HomeScreen extends StatelessWidget {
           final colorBrigthness = color.computeLuminance();
           final isColorLight = colorBrigthness > 0.5;
           return Scaffold(
+            key: const ObjectKey('homeScaffold'),
             backgroundColor: color,
             body: Center(
               child: Text(
                 "Hello there",
+                semanticsIdentifier: 'helloThereLabel',
                 style: TextStyle(
                   color: isColorLight ? Colors.black : Colors.white,
                   fontSize: 32,
